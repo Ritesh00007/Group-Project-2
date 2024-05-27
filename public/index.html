@@ -9,6 +9,7 @@
     <link rel="shortcut icon" href="image/logo.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
+    
 <body>
 
     <section>
@@ -22,13 +23,13 @@
                 <li><a href="#Products">Products</a></li>
                 <li><a href="#About">About</a></li>
                 <li><a href="#Review">Review</a></li>
-                <li><a href="#Servises">Servises</a></li>
+                <li><a href="#Servises">Services</a></li>
             </ul>
 
             <div class="icons">
-                <i class="fa-solid fa-heart"></i>
-                <i class="fa-solid fa-cart-shopping"></i>
-                <i class="fa-solid fa-user"></i>
+                <i class="fa-solid fa-cart-shopping cart-profile"></i>
+                <span id="cartCount" class="cart-count">0</span>
+                <i class="fa-solid fa-user user-profile"> </i>
             </div>
 
         </nav>
@@ -44,9 +45,7 @@ Whether you're longing to bask on sun-kissed beaches, traverse ancient trails, o
 
 Our economy packages include comfortable accommodations, essential travel logistics, and a diverse selection of destinations. From the majestic mountains to serene coastal retreats, explore hidden gems with expert local guides who bring stories of the lands to life. 
 
-We believe that the joys of travel should be accessible to all, and with Ritesh Tourism, budget constraints won't hold you back from the journey of a lifetime. Every tour is an opportunity to create lasting memories, connect with fellow travelers, and discover the world's wonders. 
-
-Join us, where affordable prices meet unparalleled adventures. Your dream vacation awaits, and it's just within reach with Ritesh Tourism. Experience the globe trotting you've always imagined, now within your budget.<!--<div class="main_image">
+We believe that the joys of travel should be accessible to all.<!--<div class="main_image">
                     <img src="image/shoes.png">
                 </div>-->
             </div>
@@ -64,19 +63,15 @@ Join us, where affordable prices meet unparalleled adventures. Your dream vacati
 
     </section>
 
-
     <!--Products-->
-
+   
     <div class="products" id="Products">
         <h1>Current Offers</h1>
 
         <div class="box">
             <div class="card">
 
-                <div class="small_card">
-                    <i class="fa-solid fa-heart"></i>
-                    <i class="fa-solid fa-share"></i>
-                </div>
+                
 
                 <div class="image">
                     <img src="image/place1.png">
@@ -95,17 +90,14 @@ Join us, where affordable prices meet unparalleled adventures. Your dream vacati
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star"></i>
                     </div>
-                    <a href="#" class="btn">Select the plan</a>
+                    <a href="#" class="btn" onclick="addToCart({id: 'plan1', name: 'China Trip', price: 3000} , event)" >Select the plan</a>
                 </div>
 
             </div>
 
             <div class="card">
 
-                <div class="small_card">
-                    <i class="fa-solid fa-heart"></i>
-                    <i class="fa-solid fa-share"></i>
-                </div>
+                
 
                 <div class="image">
                     <img src="image/place2.png">
@@ -124,17 +116,14 @@ Join us, where affordable prices meet unparalleled adventures. Your dream vacati
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star-half-stroke"></i>
                     </div>
-                    <a href="#" class="btn">Select the plan</a>
+                    <a href="#" class="btn" onclick="addToCart({id: 'plan2', name: 'South Korea Trip', price: 2500}, event)">Select the plan</a>
                 </div>
 
             </div>
 
             <div class="card">
 
-                <div class="small_card">
-                    <i class="fa-solid fa-heart"></i>
-                    <i class="fa-solid fa-share"></i>
-                </div>
+                
 
                 <div class="image">
                     <img src="image/place3.png">
@@ -153,17 +142,14 @@ Join us, where affordable prices meet unparalleled adventures. Your dream vacati
                         <i class="fa-solid fa-star-half-stroke"></i>
                         <i class="fa-regular fa-star"></i>
                     </div>
-                    <a href="#" class="btn">Select the plan</a>
+                    <a href="#" class="btn" onclick="addToCart({id: 'plan3', name: 'Thailand Trip', price: 2200}, event)">Select the plan</a>
                 </div>
 
             </div>
 
             <div class="card">
 
-                <div class="small_card">
-                    <i class="fa-solid fa-heart"></i>
-                    <i class="fa-solid fa-share"></i>
-                </div>
+                
 
                 <div class="image">
                     <img src="image/place4.png">
@@ -182,17 +168,14 @@ Join us, where affordable prices meet unparalleled adventures. Your dream vacati
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-regular fa-star"></i>
                     </div>
-                    <a href="#" class="btn">Select the plan</a>
+                    <a href="#" class="btn" onclick="addToCart({id: 'plan4', name: 'Australia Trip', price: 1700}, event)">Select the plan</a>
                 </div>
 
             </div>
 
             <div class="card">
 
-                <div class="small_card">
-                    <i class="fa-solid fa-heart"></i>
-                    <i class="fa-solid fa-share"></i>
-                </div>
+                
 
                 <div class="image">
                     <img src="image/place5.png">
@@ -210,17 +193,14 @@ Join us, where affordable prices meet unparalleled adventures. Your dream vacati
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star"></i>
                     </div>
-                    <a href="#" class="btn">Select the plan</a>
+                    <a href="#" class="btn" onclick="addToCart({id: 'plan5', name: 'Japan Trip', price: 1500}, event)">Select the plan</a>
                 </div>
 
             </div>
 
             <div class="card">
 
-                <div class="small_card">
-                    <i class="fa-solid fa-heart"></i>
-                    <i class="fa-solid fa-share"></i>
-                </div>
+               
 
                 <div class="image">
                     <img src="image/place6.png">
@@ -239,17 +219,14 @@ Join us, where affordable prices meet unparalleled adventures. Your dream vacati
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-regular fa-star-half-stroke"></i>
                     </div>
-                    <a href="#" class="btn">Select the plan</a>
+                    <a href="#" class="btn" onclick="addToCart({id: 'plan6', name: 'London Trip', price: 3800}, event)">Select the plan</a>
                 </div>
 
             </div>
 
             <div class="card">
 
-                <div class="small_card">
-                    <i class="fa-solid fa-heart"></i>
-                    <i class="fa-solid fa-share"></i>
-                </div>
+                
 
                 <div class="image">
                     <img src="image/place7.png">
@@ -268,17 +245,14 @@ Join us, where affordable prices meet unparalleled adventures. Your dream vacati
                         <i class="fa-regular fa-star"></i>
                         <i class="fa-regular fa-star"></i>
                     </div>
-                    <a href="#" class="btn">Select the plan</a>
+                    <a href="#" class="btn" onclick="addToCart({id: 'plan7', name: 'India Trip', price: 1500}, event)">Select the plan</a>
                 </div>
 
             </div>
 
             <div class="card">
 
-                <div class="small_card">
-                    <i class="fa-solid fa-heart"></i>
-                    <i class="fa-solid fa-share"></i>
-                </div>
+               
 
                 <div class="image">
                     <img src="image/place8.png">
@@ -297,7 +271,7 @@ Join us, where affordable prices meet unparalleled adventures. Your dream vacati
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-regular fa-star-half-stroke"></i>
                     </div>
-                    <a href="#" class="btn">Select the plan</a>
+                    <a href="#" class="btn" onclick="addToCart({id: 'plan8', name: 'Mexico Trip', price: 1100}, event)">Select the plan</a>
                 </div>
 
             </div>
@@ -339,7 +313,6 @@ Ritesh Tourism is an invitation to explore, to learn, and to grow, crafted from 
 
         </div>
 
-        <a href="#" class="about_btn">Select the plan</a>
 
         <script>
             function functio(small){
@@ -584,29 +557,40 @@ Ritesh Tourism is an invitation to explore, to learn, and to grow, crafted from 
         <div class="right">
             <h1>Welcome Back!</h1>
 
-            <form action="#" method="post">
+        <div id="loginForm">
+            <div id="authenticationStatus">
+                <!-- Content will be dynamically inserted here -->
+            </div>
+        </div>
+
+            <!-- SIGN UP -->
+            <div id="signupForm" style="display:none;">
+            <form action="/signup" method="post">
                 <p>User Name</p>
                 <div class="user">
                     <i class="fa-solid fa-user"></i>
-                    <input type="text" name="user" placeholder="User Name" class="username">
+                    <input type="text" name="username" placeholder="User Name" class="username" required>
                 </div>
 
                 <p class="passworg_tag">Password</p>
                 <div class="password">
                     <i class="fa-solid fa-lock"></i>
-                    <input type="text" name="password" placeholder="Password">
+                    <input type="password" name="password" placeholder="Password" required>
+                </div>
+
+                <p class="passworg_tag">E-mail</p>
+                <div class="password">
+                    <i class="fa-solid fa-envelope"></i>
+                    <input type="email" name="email" placeholder="E-mail" required>
                 </div>
 
                 <p class="forget">Forget Password ?</p>
 
-                <button type="submit">Login</button>
-                <div class="loging_icon">
-                    <a href="#"><img src="image/google.png"></a>
-                    <a href="#"><img src="image/facebook.png"></a>
-                    <a href="#"><img src="image/twitter.png"></a>
-                </div>
+                <button type="submit" style="margin: 5px;">Sign up</button>
 
             </form>
+            <button onclick="toggleForms()">Login Instead</button>
+        </div>
 
         </div>
 
@@ -663,6 +647,291 @@ Ritesh Tourism is an invitation to explore, to learn, and to grow, crafted from 
         </div>
     </footer>
 
-    
+        <!-- overlay for user info -->
+
+    <div id="profileOverlay" style="display:none;">
+        <div class="overlay-content">
+            <h3>Profile</h3>
+            <p>Username: <span id="username"></span></p>
+            <p>Email: <span id="email"></span></p>
+            <img id="profilePic" src="" alt="Profile Picture" style="width: 100px; height: 100px;">
+            <input type="file" id="profilePicFile" accept="image/*" onchange="uploadProfilePic()">
+            <button onclick="closeOverlay()">Close</button>
+        </div>
+    </div>
+
+    <!-- overlay for cart -->
+
+    <!-- Cart Overlay -->
+<div id="cartOverlay" style="display:none;">
+    <div class="overlay-content">
+        <h3>Your Cart</h3>
+        <div id="cartItemsList"></div>
+        <h4>Total Price: $<span id="cartTotalPrice">0</span></h4>
+        <button onclick="handleCheckout()">Checkout</button>
+        <button onclick="closeCartOverlay()">Close Cart</button>
+    </div>
+</div>
+
+
 </body>
+
+<script>
+    function toggleForms() {
+        var loginForm = document.getElementById('loginForm');
+        var signupForm = document.getElementById('signupForm');
+        if (loginForm.style.display === 'none') {
+            loginForm.style.display = 'block';
+            signupForm.style.display = 'none';
+        } else {
+            loginForm.style.display = 'none';
+            signupForm.style.display = 'block';
+        }
+    }
+
+    document.addEventListener("DOMContentLoaded", function() {
+    checkLoginStatus();
+    loadCart();
+    updateCartCount();
+    document.querySelector('.cart-profile').addEventListener('click', openCartOverlay);
+
+    function checkLoginStatus() {
+        fetch('/api/auth-status')
+            .then(response => response.json())
+            .then(data => {
+                if (data.isLoggedIn) {
+                    document.getElementById('authenticationStatus').innerHTML = '<p>Already logged in.</p><button class="logout-button" onclick="logout()">Logout</button>';
+                } else {
+                    document.getElementById('authenticationStatus').innerHTML = `
+                    <div id="loginForm">
+            <form action="/login" method="post">
+                <p>User Name</p>
+                <div class="user">
+                    <i class="fa-solid fa-user"></i>
+                    <input type="text" name="username" placeholder="User Name" class="username" required>
+                </div>
+
+                <p class="passworg_tag">Password</p>
+                <div class="password">
+                    <i class="fa-solid fa-lock"></i>
+                    <input type="text" name="password" placeholder="Password" required>
+                </div>
+
+                <p class="forget">Forget Password ?</p>
+
+                <button type="submit" style="margin: 5px;" onClick="loginUser()">Login</button>
+
+            </form>
+            <button onclick="toggleForms()">Sign Up Instead</button>
+        </div>`;
+                }
+            })
+            .catch(error => console.error('Error fetching auth status:', error));
+    }
+});
+
+
+
+document.querySelector('.user-profile').addEventListener('click', function() {
+    fetch('/api/auth-status')
+        .then(response => response.json())
+        .then(data => {
+            if (data.isLoggedIn) {
+                fetch('/api/user-info')
+                    .then(response => response.json())
+                    .then(userInfo => {
+                        document.getElementById('username').textContent = userInfo.username || 'N/A';
+                        document.getElementById('email').textContent = userInfo.email || 'N/A';
+                        document.getElementById('profilePic').src = userInfo.profile_pic || 'path/to/default/profile.png';
+                        document.getElementById('profileOverlay').style.display = 'block';
+                    });
+            } else {
+                alert('User not logged in');
+            }
+        })
+        .catch(error => console.error('Error:', error));
+});
+
+function closeOverlay() {
+    document.getElementById('profileOverlay').style.display = 'none';
+}
+
+
+function uploadProfilePic() {
+    const fileInput = document.getElementById('profilePicFile');
+    const file = fileInput.files[0];
+    if (!file) {
+        alert("No file selected!");
+        return;
+    }
+
+    const formData = new FormData();
+    formData.append('profilePic', file);
+
+    fetch('/api/update-profile-pic', {
+        method: 'POST',
+        body: formData  // FormData will set the Content-Type to 'multipart/form-data'
+    })
+    .then(response => response.json())
+    .then(data => {
+         alert(data.message);
+        document.getElementById('profilePic').src = data.profile_pic;
+    })
+    .catch(error => console.error('Error updating profile picture:', error));
+}
+
+// cart functionality 
+
+// Initialize cart from localStorage at the start
+document.addEventListener('DOMContentLoaded', function() {
+    loadCart();
+    updateCartCount();
+});
+
+// Function to load cart from localStorage
+function loadCart() {
+    const storedCart = localStorage.getItem('cart');
+    cart = storedCart ? JSON.parse(storedCart) : [];
+}
+
+// Function to add plan to cart and store in localStorage
+function addToCart(plan, event) {
+    event.preventDefault();
+    if (!isUserLoggedIn()) {
+        alert("Please log in to add items to your cart.");
+        return;
+    }
+    let cart = JSON.parse(localStorage.getItem('cart')) || [];
+    let found = cart.find(p => p.id === plan.id);
+    if (!found) {
+        cart.push(plan);
+        localStorage.setItem('cart', JSON.stringify(cart));
+        updateCartCount();
+        alert("Plan added to cart successfully.");
+    } else {
+        alert("This plan is already in your cart.");
+    }
+}
+
+
+    function isUserLoggedIn() {
+        console.log('Checking user login status:', !!localStorage.getItem('user'));
+    return !!localStorage.getItem('user'); // Check if user data is stored in localStorage
+}
+
+
+
+// Function to update the cart count display
+function updateCartCount() {
+    const cart = JSON.parse(localStorage.getItem('cart')) || [];
+    const cartIcon = document.getElementById('cartCount');
+    cartIcon.textContent = cart.length; // Update the display with number of items in the cart
+}
+
+document.querySelector('.logout-button').addEventListener('click', function() {
+    logout();
+});
+
+function loginUser(username) {
+    localStorage.setItem('user', JSON.stringify(username)); // Save the username as an example
+    window.location.href = '/'; // Reload the page to update the UI
+}
+
+function logout() {
+    fetch('/logout')
+        .then(() => {
+            localStorage.removeItem('cart');
+            localStorage.removeItem('user');
+            window.location.href = '/login'; // Adjust the redirect as necessary
+        })
+        .catch(error => console.error('Logout failed:', error));
+}
+
+document.getElementById('loginForm').addEventListener('submit', function(event) {
+    event.preventDefault();  // Prevent the default form submission behavior
+
+    const formData = new FormData(event.target);
+    const username = formData.get('username');
+    const password = formData.get('password');
+
+    fetch('/login', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({ username: username, password: password })
+    })
+    .then(response => response.json())
+    .then(data => {
+    if (data.success) {
+        loginUser(data.user);  // Assuming data.user contains the necessary user details
+    } else {
+        alert('Login failed: ' + data.message);
+    }
+})
+    .catch(error => console.error('Error logging in:', error));
+});
+
+// CART FUNCTIONALITY
+
+function openCartOverlay() {
+    console.log("Cart icon clicked, opening overlay."); 
+    updateCartDisplay(); // This will refresh the cart display every time it's opened
+    document.getElementById('cartOverlay').style.display = 'flex'; // Show the cart overlay
+}
+
+function closeCartOverlay() {
+    document.getElementById('cartOverlay').style.display = 'none'; // Hide the cart overlay
+}
+
+function updateCartDisplay() {
+    const cart = JSON.parse(localStorage.getItem('cart')) || [];
+    const cartItemsList = document.getElementById('cartItemsList');
+    cartItemsList.innerHTML = '';
+    let total = 0;
+
+    cart.forEach((item, index) => {
+        const itemElement = document.createElement('div');
+        itemElement.innerText = `${item.name} - $${item.price}`;
+        const removeButton = document.createElement('button');
+        removeButton.innerText = 'Remove';
+        removeButton.onclick = function() { removeFromCart(index); };
+        itemElement.appendChild(removeButton);
+        cartItemsList.appendChild(itemElement);
+
+        total += item.price;
+    });
+
+    document.getElementById('cartTotalPrice').innerText = total.toFixed(2);
+}
+
+
+
+function removeFromCart(index) {
+    let cart = JSON.parse(localStorage.getItem('cart')) || [];
+    cart.splice(index, 1);
+    localStorage.setItem('cart', JSON.stringify(cart));
+    updateCartDisplay();
+    updateCartCount();
+}
+
+function handleCheckout() {
+    if (confirm("Are you sure you want to proceed to checkout?")) {
+        console.log("Checkout process initiated");
+        
+        localStorage.removeItem('cart');
+        alert("Your order has been placed!");
+        updateCartDisplay();
+        updateCartCount();
+        closeCartOverlay();
+        
+    }
+}
+
+
+// Add event listener to cart icon to open cart overlay
+
+
+    </script>
+
 </html>

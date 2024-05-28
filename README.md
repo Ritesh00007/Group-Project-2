@@ -1,5 +1,5 @@
 # Group-Project-2
-Thisd is the Final project 2
+This is the Final project 2
 
 Deployed Link - https://ritesh-tourism-8350a9631229.herokuapp.com/
 
